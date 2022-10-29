@@ -24,6 +24,16 @@ namespace ComprasControlador
             dt.Fill(table);
             return table;
         }
+        public DataTable llenarTbl2(string tabla)
+        {
+            //llenamos nuestro dataTable, entre consulta y el datagridview
+
+            OdbcDataAdapter dt = sn.llenarTbl2(tabla);
+            DataTable table = new DataTable();
+            //la llenamos con los datos obtenidos
+            dt.Fill(table);
+            return table;
+        }
 
         public void ingresar(TextBox[] textbox, DataGridView tabla)//Crea cadenas de datos para la insercion
         {

@@ -210,6 +210,9 @@
     <EmbeddedResource Include="MovimientosProveedores.resx">
       <DependentUpon>MovimientosProveedores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MovProveedores.resx">
+      <DependentUpon>MovProveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrdenesCompras.resx">
       <DependentUpon>OrdenesCompras.cs</DependentUpon>
     </EmbeddedResource>

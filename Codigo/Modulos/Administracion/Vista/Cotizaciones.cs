@@ -17,7 +17,7 @@ namespace ComprasVista
         string emp = "tblcotizaciones";
         //Estamos instanciando
         csContralador cn = new csContralador();
-        //Controlador cn = new Controlador();
+        
         public Cotizaciones()
         {
             InitializeComponent();

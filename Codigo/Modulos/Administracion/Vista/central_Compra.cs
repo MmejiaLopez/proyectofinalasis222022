@@ -227,7 +227,8 @@ namespace ComprasVista
         private void btnPagosDia_Click(object sender, EventArgs e)
         {
             //Codigo
-           
+            MovimientosProveedores mp = new MovimientosProveedores();
+            mp.ShowDialog();
             //Ocultar submenu
             hideSubMenu();
         }

@@ -12,7 +12,7 @@ namespace ComprasVista
 {
     public partial class MovimientosClientes : Form
     {
-        ComprasControlador.csControladorJason AdminCn = new ComprasControlador.csControladorJason();
+        ComprasControlador.csContralador AdminCn = new ComprasControlador.csContralador();
         public MovimientosClientes()
         {
             InitializeComponent();
@@ -54,11 +54,6 @@ namespace ComprasVista
         private void btnExit_Click_1(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void MovimientosClientes_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -24,6 +24,16 @@ namespace ComprasControlador
             dt.Fill(table);
             return table;
         }
+        public DataTable llenarTbl2(string tabla)
+        {
+            //llenamos nuestro dataTable, entre consulta y el datagridview
+
+            OdbcDataAdapter dt = sn.llenarTbl2(tabla);
+            DataTable table = new DataTable();
+            //la llenamos con los datos obtenidos
+            dt.Fill(table);
+            return table;
+        }
 
         public void ingresar(TextBox[] textbox, DataGridView tabla)//Crea cadenas de datos para la insercion
         {
@@ -75,6 +85,22 @@ namespace ComprasControlador
             }
 
         }
-      
+
+        //Codigo movimiento clientes
+        public void fillTableMovClient(string ntabla, DataGridView tabla, string tipo, string dato)//Funcion para llenar tabla
+        {
+            try
+            {
+                OdbcDataAdapter dt = sn.llenartablaMovCliente(ntabla, tipo, dato);
+                DataTable table = new DataTable();
+                dt.Fill(table);
+                tabla.DataSource = table;
+            }
+            catch (Exception e)
+            {
+                System.Windows.MessageBox.Show("Error:" + e);
+            }
+
+        } //Fin codigo movimiento Clientes
     }
 }

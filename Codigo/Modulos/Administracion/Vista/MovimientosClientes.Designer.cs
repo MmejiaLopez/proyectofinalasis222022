@@ -148,7 +148,6 @@ namespace ComprasVista
             this.Controls.Add(this.panel1);
             this.Name = "MovimientosClientes";
             this.Text = "MovimientosClientes";
-            this.Load += new System.EventHandler(this.MovimientosClientes_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_MovimientoCliente)).EndInit();
             this.ResumeLayout(false);

@@ -52,8 +52,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="csControladorJason.cs" />
     <Compile Include="csContralador.cs" />
+    <Compile Include="csControladorJ.cs" />
     <Compile Include="csControladort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -57,7 +57,7 @@ namespace ComprasVista
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.MovProveedores = new System.Windows.Forms.Button();
+            this.btnVendedores = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelClientes.SuspendLayout();
@@ -85,17 +85,19 @@ namespace ComprasVista
             this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(237, 749);
+            this.panelSideMenu.Size = new System.Drawing.Size(316, 922);
             this.panelSideMenu.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(215)))), ((int)(((byte)(249)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 1625);
+            this.panel3.Location = new System.Drawing.Point(0, 2000);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(220, 303);
+            this.panel3.Size = new System.Drawing.Size(295, 373);
             this.panel3.TabIndex = 9;
             // 
             // btnAyuda
@@ -106,10 +108,11 @@ namespace ComprasVista
             this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAyuda.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAyuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnAyuda.Location = new System.Drawing.Point(0, 1586);
+            this.btnAyuda.Location = new System.Drawing.Point(0, 1952);
+            this.btnAyuda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnAyuda.Size = new System.Drawing.Size(220, 39);
+            this.btnAyuda.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnAyuda.Size = new System.Drawing.Size(295, 48);
             this.btnAyuda.TabIndex = 8;
             this.btnAyuda.Text = "AYUDA";
             this.btnAyuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -120,9 +123,10 @@ namespace ComprasVista
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(215)))), ((int)(((byte)(249)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 1283);
+            this.panel2.Location = new System.Drawing.Point(0, 1579);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(220, 303);
+            this.panel2.Size = new System.Drawing.Size(295, 373);
             this.panel2.TabIndex = 7;
             // 
             // btnSeguridad
@@ -133,10 +137,11 @@ namespace ComprasVista
             this.btnSeguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguridad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeguridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 1244);
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 1531);
+            this.btnSeguridad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSeguridad.Name = "btnSeguridad";
-            this.btnSeguridad.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnSeguridad.Size = new System.Drawing.Size(220, 39);
+            this.btnSeguridad.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnSeguridad.Size = new System.Drawing.Size(295, 48);
             this.btnSeguridad.TabIndex = 6;
             this.btnSeguridad.Text = "SEGURIDAD";
             this.btnSeguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -150,9 +155,10 @@ namespace ComprasVista
             this.panel1.Controls.Add(this.btnMovientosClientes);
             this.panel1.Controls.Add(this.btnBalance);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 984);
+            this.panel1.Location = new System.Drawing.Point(0, 1211);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 260);
+            this.panel1.Size = new System.Drawing.Size(295, 320);
             this.panel1.TabIndex = 5;
             // 
             // btnMoviemientosProveedor
@@ -161,10 +167,11 @@ namespace ComprasVista
             this.btnMoviemientosProveedor.FlatAppearance.BorderSize = 0;
             this.btnMoviemientosProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMoviemientosProveedor.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnMoviemientosProveedor.Location = new System.Drawing.Point(0, 70);
+            this.btnMoviemientosProveedor.Location = new System.Drawing.Point(0, 86);
+            this.btnMoviemientosProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMoviemientosProveedor.Name = "btnMoviemientosProveedor";
-            this.btnMoviemientosProveedor.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnMoviemientosProveedor.Size = new System.Drawing.Size(220, 35);
+            this.btnMoviemientosProveedor.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnMoviemientosProveedor.Size = new System.Drawing.Size(295, 43);
             this.btnMoviemientosProveedor.TabIndex = 2;
             this.btnMoviemientosProveedor.Text = "Movimientos Proveedor";
             this.btnMoviemientosProveedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -177,10 +184,11 @@ namespace ComprasVista
             this.btnMovientosClientes.FlatAppearance.BorderSize = 0;
             this.btnMovientosClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMovientosClientes.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnMovientosClientes.Location = new System.Drawing.Point(0, 35);
+            this.btnMovientosClientes.Location = new System.Drawing.Point(0, 43);
+            this.btnMovientosClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMovientosClientes.Name = "btnMovientosClientes";
-            this.btnMovientosClientes.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnMovientosClientes.Size = new System.Drawing.Size(220, 35);
+            this.btnMovientosClientes.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnMovientosClientes.Size = new System.Drawing.Size(295, 43);
             this.btnMovientosClientes.TabIndex = 1;
             this.btnMovientosClientes.Text = "Movimientos Clientes";
             this.btnMovientosClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -194,9 +202,10 @@ namespace ComprasVista
             this.btnBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBalance.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btnBalance.Location = new System.Drawing.Point(0, 0);
+            this.btnBalance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBalance.Name = "btnBalance";
-            this.btnBalance.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnBalance.Size = new System.Drawing.Size(220, 35);
+            this.btnBalance.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnBalance.Size = new System.Drawing.Size(295, 43);
             this.btnBalance.TabIndex = 0;
             this.btnBalance.Text = "Balance de Antigüedad";
             this.btnBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -211,10 +220,11 @@ namespace ComprasVista
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnReportes.Location = new System.Drawing.Point(0, 945);
+            this.btnReportes.Location = new System.Drawing.Point(0, 1163);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnReportes.Size = new System.Drawing.Size(220, 39);
+            this.btnReportes.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnReportes.Size = new System.Drawing.Size(295, 48);
             this.btnReportes.TabIndex = 4;
             this.btnReportes.Text = "REPORTES";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -224,7 +234,7 @@ namespace ComprasVista
             // panelClientes
             // 
             this.panelClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(215)))), ((int)(((byte)(249)))));
-            this.panelClientes.Controls.Add(this.MovProveedores);
+            this.panelClientes.Controls.Add(this.btnVendedores);
             this.panelClientes.Controls.Add(this.btnCompra);
             this.panelClientes.Controls.Add(this.btnCompraOrden);
             this.panelClientes.Controls.Add(this.btnFacturaProveedores);
@@ -235,9 +245,10 @@ namespace ComprasVista
             this.panelClientes.Controls.Add(this.btnClientesCaja);
             this.panelClientes.Controls.Add(this.btnListado);
             this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelClientes.Location = new System.Drawing.Point(0, 430);
+            this.panelClientes.Location = new System.Drawing.Point(0, 529);
+            this.panelClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(220, 515);
+            this.panelClientes.Size = new System.Drawing.Size(295, 634);
             this.panelClientes.TabIndex = 3;
             // 
             // btnCompra
@@ -246,10 +257,11 @@ namespace ComprasVista
             this.btnCompra.FlatAppearance.BorderSize = 0;
             this.btnCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompra.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnCompra.Location = new System.Drawing.Point(0, 280);
+            this.btnCompra.Location = new System.Drawing.Point(0, 344);
+            this.btnCompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCompra.Name = "btnCompra";
-            this.btnCompra.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnCompra.Size = new System.Drawing.Size(220, 35);
+            this.btnCompra.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnCompra.Size = new System.Drawing.Size(295, 43);
             this.btnCompra.TabIndex = 26;
             this.btnCompra.Text = "Compras";
             this.btnCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -261,10 +273,11 @@ namespace ComprasVista
             this.btnCompraOrden.FlatAppearance.BorderSize = 0;
             this.btnCompraOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompraOrden.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnCompraOrden.Location = new System.Drawing.Point(0, 245);
+            this.btnCompraOrden.Location = new System.Drawing.Point(0, 301);
+            this.btnCompraOrden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCompraOrden.Name = "btnCompraOrden";
-            this.btnCompraOrden.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnCompraOrden.Size = new System.Drawing.Size(220, 35);
+            this.btnCompraOrden.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnCompraOrden.Size = new System.Drawing.Size(295, 43);
             this.btnCompraOrden.TabIndex = 25;
             this.btnCompraOrden.Text = "Orden de Compra";
             this.btnCompraOrden.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -276,10 +289,11 @@ namespace ComprasVista
             this.btnFacturaProveedores.FlatAppearance.BorderSize = 0;
             this.btnFacturaProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturaProveedores.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnFacturaProveedores.Location = new System.Drawing.Point(0, 210);
+            this.btnFacturaProveedores.Location = new System.Drawing.Point(0, 258);
+            this.btnFacturaProveedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFacturaProveedores.Name = "btnFacturaProveedores";
-            this.btnFacturaProveedores.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnFacturaProveedores.Size = new System.Drawing.Size(220, 35);
+            this.btnFacturaProveedores.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnFacturaProveedores.Size = new System.Drawing.Size(295, 43);
             this.btnFacturaProveedores.TabIndex = 24;
             this.btnFacturaProveedores.Text = "Facturas Proveedores";
             this.btnFacturaProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -291,10 +305,11 @@ namespace ComprasVista
             this.btnFacturaCliente.FlatAppearance.BorderSize = 0;
             this.btnFacturaCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturaCliente.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnFacturaCliente.Location = new System.Drawing.Point(0, 175);
+            this.btnFacturaCliente.Location = new System.Drawing.Point(0, 215);
+            this.btnFacturaCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFacturaCliente.Name = "btnFacturaCliente";
-            this.btnFacturaCliente.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnFacturaCliente.Size = new System.Drawing.Size(220, 35);
+            this.btnFacturaCliente.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnFacturaCliente.Size = new System.Drawing.Size(295, 43);
             this.btnFacturaCliente.TabIndex = 23;
             this.btnFacturaCliente.Text = "Facturas Clientes";
             this.btnFacturaCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -307,10 +322,11 @@ namespace ComprasVista
             this.btnPedidos.FlatAppearance.BorderSize = 0;
             this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPedidos.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnPedidos.Location = new System.Drawing.Point(0, 140);
+            this.btnPedidos.Location = new System.Drawing.Point(0, 172);
+            this.btnPedidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPedidos.Name = "btnPedidos";
-            this.btnPedidos.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnPedidos.Size = new System.Drawing.Size(220, 35);
+            this.btnPedidos.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnPedidos.Size = new System.Drawing.Size(295, 43);
             this.btnPedidos.TabIndex = 22;
             this.btnPedidos.Text = "Pedidos";
             this.btnPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -323,10 +339,11 @@ namespace ComprasVista
             this.btnCotizaciones.FlatAppearance.BorderSize = 0;
             this.btnCotizaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCotizaciones.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnCotizaciones.Location = new System.Drawing.Point(0, 105);
+            this.btnCotizaciones.Location = new System.Drawing.Point(0, 129);
+            this.btnCotizaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCotizaciones.Name = "btnCotizaciones";
-            this.btnCotizaciones.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnCotizaciones.Size = new System.Drawing.Size(220, 35);
+            this.btnCotizaciones.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnCotizaciones.Size = new System.Drawing.Size(295, 43);
             this.btnCotizaciones.TabIndex = 21;
             this.btnCotizaciones.Text = "Contizaciones";
             this.btnCotizaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -339,10 +356,11 @@ namespace ComprasVista
             this.btnProveedorCaja.FlatAppearance.BorderSize = 0;
             this.btnProveedorCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedorCaja.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnProveedorCaja.Location = new System.Drawing.Point(0, 70);
+            this.btnProveedorCaja.Location = new System.Drawing.Point(0, 86);
+            this.btnProveedorCaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnProveedorCaja.Name = "btnProveedorCaja";
-            this.btnProveedorCaja.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnProveedorCaja.Size = new System.Drawing.Size(220, 35);
+            this.btnProveedorCaja.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnProveedorCaja.Size = new System.Drawing.Size(295, 43);
             this.btnProveedorCaja.TabIndex = 2;
             this.btnProveedorCaja.Text = "Caja Proveedor";
             this.btnProveedorCaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -355,10 +373,11 @@ namespace ComprasVista
             this.btnClientesCaja.FlatAppearance.BorderSize = 0;
             this.btnClientesCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClientesCaja.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnClientesCaja.Location = new System.Drawing.Point(0, 35);
+            this.btnClientesCaja.Location = new System.Drawing.Point(0, 43);
+            this.btnClientesCaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClientesCaja.Name = "btnClientesCaja";
-            this.btnClientesCaja.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnClientesCaja.Size = new System.Drawing.Size(220, 35);
+            this.btnClientesCaja.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnClientesCaja.Size = new System.Drawing.Size(295, 43);
             this.btnClientesCaja.TabIndex = 1;
             this.btnClientesCaja.Text = "Caja Cliente";
             this.btnClientesCaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -372,9 +391,10 @@ namespace ComprasVista
             this.btnListado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListado.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btnListado.Location = new System.Drawing.Point(0, 0);
+            this.btnListado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnListado.Name = "btnListado";
-            this.btnListado.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnListado.Size = new System.Drawing.Size(220, 35);
+            this.btnListado.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnListado.Size = new System.Drawing.Size(295, 43);
             this.btnListado.TabIndex = 0;
             this.btnListado.Text = "Listado de Precios";
             this.btnListado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -389,10 +409,11 @@ namespace ComprasVista
             this.btnProcesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProcesos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProcesos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnProcesos.Location = new System.Drawing.Point(0, 391);
+            this.btnProcesos.Location = new System.Drawing.Point(0, 481);
+            this.btnProcesos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnProcesos.Name = "btnProcesos";
-            this.btnProcesos.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnProcesos.Size = new System.Drawing.Size(220, 39);
+            this.btnProcesos.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnProcesos.Size = new System.Drawing.Size(295, 48);
             this.btnProcesos.TabIndex = 2;
             this.btnProcesos.Text = "PROCESOS";
             this.btnProcesos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -405,9 +426,10 @@ namespace ComprasVista
             this.panelCompras.Controls.Add(this.btnProveedores);
             this.panelCompras.Controls.Add(this.btnCliente);
             this.panelCompras.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCompras.Location = new System.Drawing.Point(0, 126);
+            this.panelCompras.Location = new System.Drawing.Point(0, 155);
+            this.panelCompras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelCompras.Name = "panelCompras";
-            this.panelCompras.Size = new System.Drawing.Size(220, 265);
+            this.panelCompras.Size = new System.Drawing.Size(295, 326);
             this.panelCompras.TabIndex = 1;
             // 
             // btnProveedores
@@ -416,10 +438,11 @@ namespace ComprasVista
             this.btnProveedores.FlatAppearance.BorderSize = 0;
             this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedores.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btnProveedores.Location = new System.Drawing.Point(0, 35);
+            this.btnProveedores.Location = new System.Drawing.Point(0, 43);
+            this.btnProveedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnProveedores.Size = new System.Drawing.Size(220, 35);
+            this.btnProveedores.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnProveedores.Size = new System.Drawing.Size(295, 43);
             this.btnProveedores.TabIndex = 2;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -433,9 +456,10 @@ namespace ComprasVista
             this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCliente.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btnCliente.Location = new System.Drawing.Point(0, 0);
+            this.btnCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnCliente.Size = new System.Drawing.Size(220, 35);
+            this.btnCliente.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnCliente.Size = new System.Drawing.Size(295, 43);
             this.btnCliente.TabIndex = 0;
             this.btnCliente.Text = "Cliente";
             this.btnCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -450,10 +474,11 @@ namespace ComprasVista
             this.btnCatalogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCatalogo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCatalogo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnCatalogo.Location = new System.Drawing.Point(0, 87);
+            this.btnCatalogo.Location = new System.Drawing.Point(0, 107);
+            this.btnCatalogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCatalogo.Name = "btnCatalogo";
-            this.btnCatalogo.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnCatalogo.Size = new System.Drawing.Size(220, 39);
+            this.btnCatalogo.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnCatalogo.Size = new System.Drawing.Size(295, 48);
             this.btnCatalogo.TabIndex = 0;
             this.btnCatalogo.Text = "CATALOGOS";
             this.btnCatalogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -465,16 +490,18 @@ namespace ComprasVista
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 87);
+            this.panelLogo.Size = new System.Drawing.Size(295, 107);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 87);
+            this.pictureBox1.Size = new System.Drawing.Size(295, 107);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -482,37 +509,41 @@ namespace ComprasVista
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::ComprasVista.Properties.Resources.Administracion;
-            this.pictureBox2.Location = new System.Drawing.Point(237, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(316, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1027, 749);
+            this.pictureBox2.Size = new System.Drawing.Size(1369, 922);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // MovProveedores
+            // btnVendedores
             // 
-            this.MovProveedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MovProveedores.FlatAppearance.BorderSize = 0;
-            this.MovProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MovProveedores.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.MovProveedores.Location = new System.Drawing.Point(0, 315);
-            this.MovProveedores.Name = "MovProveedores";
-            this.MovProveedores.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.MovProveedores.Size = new System.Drawing.Size(220, 35);
-            this.MovProveedores.TabIndex = 27;
-            this.MovProveedores.Text = "Movimientos Proveedores";
-            this.MovProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MovProveedores.UseVisualStyleBackColor = true;
+            this.btnVendedores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVendedores.FlatAppearance.BorderSize = 0;
+            this.btnVendedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendedores.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btnVendedores.Location = new System.Drawing.Point(0, 387);
+            this.btnVendedores.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVendedores.Name = "btnVendedores";
+            this.btnVendedores.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btnVendedores.Size = new System.Drawing.Size(295, 43);
+            this.btnVendedores.TabIndex = 27;
+            this.btnVendedores.Text = "Vendedores";
+            this.btnVendedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVendedores.UseVisualStyleBackColor = true;
+            this.btnVendedores.Click += new System.EventHandler(this.btnVendedores_Click_1);
             // 
             // central_Compra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 749);
+            this.ClientSize = new System.Drawing.Size(1685, 922);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panelSideMenu);
             this.IsMdiContainer = true;
-            this.MinimumSize = new System.Drawing.Size(1280, 766);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1701, 932);
             this.Name = "central_Compra";
             this.Text = "Central_Compra_3000";
             this.panelSideMenu.ResumeLayout(false);
@@ -556,6 +587,6 @@ namespace ComprasVista
         private System.Windows.Forms.Button btnCompraOrden;
         private System.Windows.Forms.Button btnFacturaProveedores;
         private System.Windows.Forms.Button btnCompra;
-        private System.Windows.Forms.Button MovProveedores;
+        private System.Windows.Forms.Button btnVendedores;
     }
 }

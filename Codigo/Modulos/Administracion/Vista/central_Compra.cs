@@ -12,7 +12,7 @@ namespace ComprasVista
 {
     public partial class central_Compra : Form
     {
-        Seguridad_Controlador.Controlador cnseg = new Seguridad_Controlador.Controlador();
+       Seguridad_Controlador.Controlador cnseg = new Seguridad_Controlador.Controlador();
         public central_Compra()
         {
             InitializeComponent();
@@ -147,7 +147,10 @@ namespace ComprasVista
         private void btnContactoClientes_Click(object sender, EventArgs e)
         {
             //Codigo
-           
+            Caja_Clientes p = new Caja_Clientes();
+            p.MdiParent = this;
+            p.Show();
+            pictureBox2.Visible = false;
             //Ocultar submenu
             hideSubMenu();
         }
@@ -202,7 +205,10 @@ namespace ComprasVista
         private void btnProveedores_Click(object sender, EventArgs e)
         {
             //Codigo
-           
+            Pedidos p = new Pedidos();
+            p.MdiParent = this;
+            p.Show();
+            pictureBox2.Visible = false;
             //Ocultar submenu
             hideSubMenu();
         }
@@ -210,7 +216,10 @@ namespace ComprasVista
         private void btnContactosProveedores_Click(object sender, EventArgs e)
         {
             //Codigo
-           
+            MovimientosClientes lp = new MovimientosClientes();
+            lp.MdiParent = this;
+            lp.Show();
+            pictureBox2.Visible = false;
             //Ocultar submenu
             hideSubMenu();
         }
@@ -218,7 +227,8 @@ namespace ComprasVista
         private void btnPagosDia_Click(object sender, EventArgs e)
         {
             //Codigo
-           
+            MovimientosProveedores mp = new MovimientosProveedores();
+            mp.ShowDialog();
             //Ocultar submenu
             hideSubMenu();
         }
@@ -305,8 +315,8 @@ namespace ComprasVista
         private void btnMovimientos_Click(object sender, EventArgs e)
         {
             //Codigo
-            Form formMovimientosVentas = new Pedidos();
-            formMovimientosVentas.ShowDialog();
+           /* Form formMovimientosVentas = new Pedidos();
+            formMovimientosVentas.ShowDialog();*/
             //Ocultar submenu
             hideSubMenu();
         }
@@ -329,6 +339,13 @@ namespace ComprasVista
         private void btnAyuda_Click(object sender, EventArgs e)
         {
             showSubMenu(panel3);
+        }
+
+        private void btnVendedores_Click_1(object sender, EventArgs e)
+        {
+            Form formVendedoresVentas = new VendedoresVentas();
+            formVendedoresVentas.ShowDialog();
+            hideSubMenu();
         }
     }
 }

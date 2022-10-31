@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Odbc;
+using System.Windows.Forms;
 
 namespace ComprasModelo
 {
@@ -82,17 +83,34 @@ namespace ComprasModelo
 
         public string[] camposCClientes(string id)
         {
-            string[] datos = new string[2];
-            string sql = "select SaldoActualizado_CajaClientes, SaldoAnterior_CajaClientes from tblcajaclientes where FKId_VentasEncabezado = '"+ id+ "' Order by SaldoActualizado_CajaClientes asc Limit 1";
+            string[] datos = new string[3];
+            string sql = "select SaldoActualizado_CajaClientes, SaldoAnterior_CajaClientes, FkId_FacturaClientes from tblcajaclientes where FKId_VentasEncabezado = '" + id+ "' Order by SaldoActualizado_CajaClientes asc Limit 1";
             OdbcCommand cmd = new OdbcCommand(sql, con.conexion());
             OdbcDataReader lr = cmd.ExecuteReader();
             while (lr.Read())
             {
                 datos[0] = lr.GetString(0);
                 datos[1] = lr.GetString(1);
+                datos[2] = lr.GetString(2);
             }
 
             return datos;
+        }
+
+        public void insertarCC(string dato, string tipo, string tabla)
+        {
+            try
+            {
+                string sql = "insert into " + tabla + "(" + tipo + ") values (" + dato + ")";
+                OdbcCommand cmd = new OdbcCommand(sql, con.conexion());
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e);
+            }
+
+
         }
 
     }

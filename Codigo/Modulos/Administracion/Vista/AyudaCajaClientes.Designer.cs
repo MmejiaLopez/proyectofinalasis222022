@@ -1,7 +1,7 @@
 ﻿
 namespace ComprasVista
 {
-    partial class AyudaPedido
+    partial class AyudaCajaClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -29,38 +29,36 @@ namespace ComprasVista
         /// </summary>
         private void InitializeComponent()
         {
-            this.Dgv_ayudapedido = new System.Windows.Forms.DataGridView();
-            this.Txt_codigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Txt_codigo = new System.Windows.Forms.TextBox();
+            this.Dgv_ayudacajac = new System.Windows.Forms.DataGridView();
             this.btninsertar = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ayudapedido)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ayudacajac)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Dgv_ayudapedido
-            // 
-            this.Dgv_ayudapedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_ayudapedido.Location = new System.Drawing.Point(12, 164);
-            this.Dgv_ayudapedido.Name = "Dgv_ayudapedido";
-            this.Dgv_ayudapedido.Size = new System.Drawing.Size(759, 274);
-            this.Dgv_ayudapedido.TabIndex = 0;
-            this.Dgv_ayudapedido.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_ayudapedido_CellContentClick);
-            // 
-            // Txt_codigo
-            // 
-            this.Txt_codigo.Location = new System.Drawing.Point(217, 112);
-            this.Txt_codigo.Name = "Txt_codigo";
-            this.Txt_codigo.Size = new System.Drawing.Size(316, 20);
-            this.Txt_codigo.TabIndex = 59;
-            this.Txt_codigo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(160, 115);
+            this.label1.Location = new System.Drawing.Point(169, 109);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 60;
+            this.label1.TabIndex = 64;
             this.label1.Text = "Codigo";
+            // 
+            // Txt_codigo
+            // 
+            this.Txt_codigo.Location = new System.Drawing.Point(226, 106);
+            this.Txt_codigo.Name = "Txt_codigo";
+            this.Txt_codigo.Size = new System.Drawing.Size(316, 20);
+            this.Txt_codigo.TabIndex = 63;
+            // 
+            // Dgv_ayudacajac
+            // 
+            this.Dgv_ayudacajac.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ayudacajac.Location = new System.Drawing.Point(21, 158);
+            this.Dgv_ayudacajac.Name = "Dgv_ayudacajac";
+            this.Dgv_ayudacajac.Size = new System.Drawing.Size(759, 274);
+            this.Dgv_ayudacajac.TabIndex = 61;
             // 
             // btninsertar
             // 
@@ -72,29 +70,28 @@ namespace ComprasVista
             this.btninsertar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
             this.btninsertar.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btninsertar.IconSize = 40;
-            this.btninsertar.Location = new System.Drawing.Point(339, 24);
+            this.btninsertar.Location = new System.Drawing.Point(348, 18);
             this.btninsertar.Name = "btninsertar";
             this.btninsertar.Size = new System.Drawing.Size(69, 61);
-            this.btninsertar.TabIndex = 58;
+            this.btninsertar.TabIndex = 62;
             this.btninsertar.Text = "Insertar";
             this.btninsertar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btninsertar.UseVisualStyleBackColor = true;
             this.btninsertar.Click += new System.EventHandler(this.btninsertar_Click);
             // 
-            // AyudaPedido
+            // AyudaCajaClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(789, 462);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Txt_codigo);
             this.Controls.Add(this.btninsertar);
-            this.Controls.Add(this.Dgv_ayudapedido);
-            this.Name = "AyudaPedido";
-            this.Text = "AyudaPedido";
-            this.Load += new System.EventHandler(this.AyudaPedido_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ayudapedido)).EndInit();
+            this.Controls.Add(this.Dgv_ayudacajac);
+            this.Name = "AyudaCajaClientes";
+            this.Text = "AyudaCajaClientes";
+            //this.Load += new System.EventHandler(this.AyudaCajaClientes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ayudacajac)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,9 +99,9 @@ namespace ComprasVista
 
         #endregion
 
-        private System.Windows.Forms.DataGridView Dgv_ayudapedido;
-        private FontAwesome.Sharp.IconButton btninsertar;
-        private System.Windows.Forms.TextBox Txt_codigo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox Txt_codigo;
+        private FontAwesome.Sharp.IconButton btninsertar;
+        private System.Windows.Forms.DataGridView Dgv_ayudacajac;
     }
 }

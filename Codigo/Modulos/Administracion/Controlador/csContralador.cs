@@ -8,7 +8,7 @@ using System.Data.Odbc;
 using ComprasModelo;
 using System.Windows;
 using System.Windows.Forms;
-
+using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace ComprasControlador
 {
@@ -16,6 +16,13 @@ namespace ComprasControlador
     {
         Sentencias sn = new Sentencias();
         csControladort cn = new csControladort();
+        private static string ids;
+
+        public string IDS
+        {
+            get { return ids; }
+            set { ids = value; }
+        }
         public DataTable llenarTbl(string tabla)
         {
             //llenamos nuestro dataTable, entre consulta y el datagridview
@@ -112,12 +119,13 @@ namespace ComprasControlador
 
         }
 
-        public void llenarCajaCliente(TextBox[] textbox, string tblcajaclientes)
+        public void llenarCajaCliente(TextBox[] textbox, string idventas)
         {
             try
             {
 
-                string[] datos = sn.camposCClientes(textbox[2].Text);
+                string[] datos = sn.camposCClientes(idventas);
+
                 for (int x = 0; x < datos.Length; x++)
                 {
                     textbox[x].Text = datos[x];
@@ -131,13 +139,38 @@ namespace ComprasControlador
 
         }
 
-        public void inicioCaja(TextBox id, DataGridView tabla, TextBox idcaja)
+        public void inicioCaja(TextBox id, DataGridView tabla, TextBox[] textBoxes)
         {
+            limpiarTxbx(textBoxes);
             cn.crearid(id, "tblcajaclientes", " ", "PkId_CajaClientes");
-            fillCajaCliente("tblcajaclientes", tabla, "PkId_CajaClientes", idcaja.Text);
-                            
+            fillTableMovClient("tblcajaclientes", tabla, "PkId_CajaClientes", id.Text);
+          
 
         }
+
+        public void insertarCajaClientes(TextBox[] textBox, string saldoactualizado)
+        {
+            /*string[] datosCC = new string[5];
+
+            datosCC[0] = idcaja.Text;
+            datosCC[1] = abono.Text;*/
+
+            //string consultacaja = textBox[0].Text + ", 2, '" + textBox[1].Text + "',  '" + textBox[3].Text + "',  '" + textBox[2].Text + "',1 ";
+            MessageBox.Show(textBox[4].Text);
+            string consultacaja = "'" + textBox[0].Text + "', '" + textBox[1].Text + "', '" + textBox[2].Text + "' , '" + textBox[3].Text + "' , '" + saldoactualizado + "' , '" + textBox[4].Text + "'";
+            string consultacaja_campos = "PkId_CajaClientes, FKId_VentasEncabezado, abono_CajaClientes, SaldoAnterior_CajaClientes, SaldoActualizado_CajaClientes, FkId_FacturaClientes";
+            sn.insertarCC(consultacaja, consultacaja_campos, "tblcajaclientes");
+
+        }
+     
+        public void limpiarTxbx(TextBox[] textBoxes)
+        {
+            for(int x = 0; x < textBoxes.Length; x++)
+            {
+                textBoxes[x].Clear();
+            }
+        }
+
 
     }
 }

@@ -64,6 +64,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AyudaCajaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaCajaClientes.Designer.cs">
+      <DependentUpon>AyudaCajaClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="AyudaPedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AyudaCajaClientes.resx">
+      <DependentUpon>AyudaCajaClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AyudaPedido.resx">
       <DependentUpon>AyudaPedido.cs</DependentUpon>
     </EmbeddedResource>

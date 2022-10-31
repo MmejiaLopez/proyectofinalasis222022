@@ -28,7 +28,11 @@ namespace ComprasVista
 
         private void Caja_Clientes_Load(object sender, EventArgs e)
         {
-            AdminCn.inicioCaja(txtIdCaja, DgvCajaClientes, txtIdCaja);
+                        TextBox[] textBoxes2 = { txtIdCaja, txtVentasE, txtAbono, txtSaldoActualizado, txtIdFactura, txtSaldoAnterior };
+
+            AdminCn.inicioCaja(txtIdCaja, DgvCajaClientes, textBoxes2);
+
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -65,10 +69,10 @@ namespace ComprasVista
 
         private void txtVentasE_TextChanged(object sender, EventArgs e)
         {
-            TextBox[] textBoxes = { txtSaldoActualizado, txtSaldoAnterior, txtVentasE };
+            TextBox[] textBoxes = { txtSaldoActualizado, txtSaldoAnterior, txtIdFactura };
             if(txtVentasE.Text != "")
             {
-                AdminCn.llenarCajaCliente(textBoxes,"tblcajaclientes");
+                AdminCn.llenarCajaCliente(textBoxes, txtVentasE.Text);
             }
 
         }
@@ -80,8 +84,15 @@ namespace ComprasVista
 
         private void button3_Click(object sender, EventArgs e)
         {
+            TextBox[] textBoxes = { txtIdCaja, txtVentasE, txtAbono, txtSaldoActualizado, txtIdFactura };
+            TextBox[] textBoxes2 = { txtIdCaja, txtVentasE, txtAbono, txtSaldoActualizado, txtIdFactura, txtSaldoAnterior };
             double restaCClientes = Convert.ToDouble(txtSaldoActualizado.Text) - Convert.ToDouble(txtAbono.Text);
             MessageBox.Show("La resta es: " + restaCClientes);
+            AdminCn.insertarCajaClientes(textBoxes,restaCClientes.ToString());
+            AdminCn.inicioCaja(txtIdCaja, DgvCajaClientes, textBoxes2);
+            //string cadena = "Update tblcajaclientes set SaldoActualizado_CajaClientes = '" +this.txtSaldoActualizado.Text+ "' Where FKId_VentasEncabezado = '"+this.txtVentasE.Text+"'";
+            // string cadena = "insert into tblcajaclientes values ( "+ txtIdCaja.Text+ " ";
+
         }
     }
 }

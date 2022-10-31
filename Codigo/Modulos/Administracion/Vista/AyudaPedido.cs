@@ -43,6 +43,11 @@ namespace ComprasVista
             
         }
 
+        private void Dgv_ayudapedido_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void btninsertar_Click(object sender, EventArgs e)
         {
             if(Dgv_ayudapedido.CurrentCell != null)

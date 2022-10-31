@@ -40,10 +40,11 @@ namespace ComprasVista
             this.label4 = new System.Windows.Forms.Label();
             this.txtVentasE = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gpbCajaClientes = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.txtIdFactura = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCajaClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,14 +153,14 @@ namespace ComprasVista
             this.label5.TabIndex = 52;
             this.label5.Text = "Ventas encabezado";
             // 
-            // groupBox1
+            // gpbCajaClientes
             // 
-            this.groupBox1.Location = new System.Drawing.Point(5, 52);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(435, 308);
-            this.groupBox1.TabIndex = 53;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Caja Clientes ";
+            this.gpbCajaClientes.Location = new System.Drawing.Point(5, 52);
+            this.gpbCajaClientes.Name = "gpbCajaClientes";
+            this.gpbCajaClientes.Size = new System.Drawing.Size(435, 308);
+            this.gpbCajaClientes.TabIndex = 53;
+            this.gpbCajaClientes.TabStop = false;
+            this.gpbCajaClientes.Text = "Caja Clientes ";
             // 
             // button1
             // 
@@ -191,12 +192,20 @@ namespace ComprasVista
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // txtIdFactura
+            // 
+            this.txtIdFactura.Location = new System.Drawing.Point(164, 366);
+            this.txtIdFactura.Name = "txtIdFactura";
+            this.txtIdFactura.Size = new System.Drawing.Size(260, 20);
+            this.txtIdFactura.TabIndex = 0;
+            // 
             // Caja_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(914, 415);
+            this.Controls.Add(this.txtIdFactura);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -211,7 +220,7 @@ namespace ComprasVista
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtIdCaja);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gpbCajaClientes);
             this.Name = "Caja_Clientes";
             this.Text = "Caja_Clientes";
             this.Load += new System.EventHandler(this.Caja_Clientes_Load);
@@ -233,9 +242,10 @@ namespace ComprasVista
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtVentasE;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gpbCajaClientes;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtIdFactura;
     }
 }

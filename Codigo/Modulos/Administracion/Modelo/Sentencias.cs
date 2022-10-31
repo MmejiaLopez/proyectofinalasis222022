@@ -60,5 +60,40 @@ namespace ComprasModelo
             }
 
         }
+        //Codigo movimiento clientes
+        public OdbcDataAdapter llenartablaMovCliente(string tabla, string tipodato, string dato)
+        {
+            string sql = "select * from " + tabla;
+            OdbcDataAdapter datatable = new OdbcDataAdapter(sql, con.conexion());
+            return datatable;
+
+        }
+
+        //Caja clientes
+        public OdbcDataAdapter llenarcajaClientes(string tabla, string tipodato, string dato)
+        {
+
+            string sql = "select * from " + tabla + " where " + tipodato + " like ('" + dato + "%');";
+            OdbcDataAdapter datatable = new OdbcDataAdapter(sql, con.conexion());
+
+
+            return datatable;
+        }
+
+        public string[] camposCClientes(string id)
+        {
+            string[] datos = new string[2];
+            string sql = "select SaldoActualizado_CajaClientes, SaldoAnterior_CajaClientes from tblcajaclientes where FKId_VentasEncabezado = '"+ id+ "' Order by SaldoActualizado_CajaClientes asc Limit 1";
+            OdbcCommand cmd = new OdbcCommand(sql, con.conexion());
+            OdbcDataReader lr = cmd.ExecuteReader();
+            while (lr.Read())
+            {
+                datos[0] = lr.GetString(0);
+                datos[1] = lr.GetString(1);
+            }
+
+            return datos;
+        }
+
     }
- }
+}

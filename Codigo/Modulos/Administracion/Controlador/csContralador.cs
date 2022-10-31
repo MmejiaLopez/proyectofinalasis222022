@@ -9,11 +9,13 @@ using ComprasModelo;
 using System.Windows;
 using System.Windows.Forms;
 
+
 namespace ComprasControlador
 {
     public class csContralador
     {
         Sentencias sn = new Sentencias();
+        csControladort cn = new csControladort();
         public DataTable llenarTbl(string tabla)
         {
             //llenamos nuestro dataTable, entre consulta y el datagridview
@@ -75,5 +77,67 @@ namespace ComprasControlador
             }
 
         }
+
+        //Codigo movimiento clientes
+        public void fillTableMovClient(string ntabla, DataGridView tabla, string tipo, string dato)//Funcion para llenar tabla
+        {
+            try
+            {
+                OdbcDataAdapter dt = sn.llenartablaMovCliente(ntabla, tipo, dato);
+                DataTable table = new DataTable();
+                dt.Fill(table);
+                tabla.DataSource = table;
+            }
+            catch (Exception e)
+            {
+                System.Windows.MessageBox.Show("Error:" + e);
+            }
+
+        } //Fin codigo movimiento Clientes
+
+        //Caja clientes
+ public void fillCajaCliente(string ntabla, DataGridView tabla, string tipo, string dato)//Funcion para llenar tabla
+        {
+            try
+            {
+                OdbcDataAdapter dt = sn.llenarcajaClientes(ntabla, tipo, dato);
+                DataTable table = new DataTable();
+                dt.Fill(table);
+                tabla.DataSource = table;
+            }
+            catch (Exception e)
+            {
+                System.Windows.MessageBox.Show("Error:" + e);
+            }
+
+        }
+
+        public void llenarCajaCliente(TextBox[] textbox, string tblcajaclientes)
+        {
+            try
+            {
+
+                string[] datos = sn.camposCClientes(textbox[2].Text);
+                for (int x = 0; x < datos.Length; x++)
+                {
+                    textbox[x].Text = datos[x];
+                }
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show("Error:" + e);
+
+            }
+
+        }
+
+        public void inicioCaja(TextBox id, DataGridView tabla, TextBox idcaja)
+        {
+            cn.crearid(id, "tblcajaclientes", " ", "PkId_CajaClientes");
+            fillCajaCliente("tblcajaclientes", tabla, "PkId_CajaClientes", idcaja.Text);
+                            
+
+        }
+
     }
 }

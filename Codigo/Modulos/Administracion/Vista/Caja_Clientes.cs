@@ -7,31 +7,81 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComprasControlador;
 
-namespace   ComprasVista
+
+namespace ComprasVista
 {
     public partial class Caja_Clientes : Form
     {
+        csControladort cn = new csControladort();
+
+        ComprasControlador.csContralador AdminCn = new ComprasControlador.csContralador();
+
         public Caja_Clientes()
         {
             InitializeComponent();
         }
 
+        public DataGridView tabla;
+
+
         private void Caja_Clientes_Load(object sender, EventArgs e)
+        {
+            AdminCn.inicioCaja(txtIdCaja, DgvCajaClientes, txtIdCaja);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void navegador1_Load(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
-            NavegadorVista.Navegador.idApp = "3103";
-            TextBox[] Grupotextbox = { txtIdCaja, txtSaldo, txtIdCliente, txtAbono };
-            TextBox[] Idtextbox = { txtIdCaja, txtIdCliente };
-            navegador1.textbox = Grupotextbox;
-            navegador1.tabla = Dgv_CajaClientes;
-            navegador1.textboxi = Idtextbox;
-            navegador1.actual = this;
-            navegador1.cargar(Dgv_CajaClientes, Grupotextbox, "colchoneria");
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AdminCn.fillTableMovClient("tblcajaclientes", DgvCajaClientes, "PkId_CajaClientes", txtIdCaja.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AyudaPedido a = new AyudaPedido("tblventasencabezado", "PkId_VentasEncabezado");
+
+
+            if (cn.IDS == null && txtVentasE.Text.Length == 0)
+            {
+                cn.IDS = null;
+                a.Show();
+            }
+            else
+            {
+                txtVentasE.Text = cn.IDS;
+                cn.IDS = null;
+            }
+        }
+
+        private void txtVentasE_TextChanged(object sender, EventArgs e)
+        {
+            TextBox[] textBoxes = { txtSaldoActualizado, txtSaldoAnterior, txtVentasE };
+            if(txtVentasE.Text != "")
+            {
+                AdminCn.llenarCajaCliente(textBoxes,"tblcajaclientes");
+            }
+
+        }
+
+        private void txtSaldoActualizado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double restaCClientes = Convert.ToDouble(txtSaldoActualizado.Text) - Convert.ToDouble(txtAbono.Text);
+            MessageBox.Show("La resta es: " + restaCClientes);
         }
     }
 }

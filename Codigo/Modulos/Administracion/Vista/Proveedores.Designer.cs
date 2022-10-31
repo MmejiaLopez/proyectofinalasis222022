@@ -178,11 +178,11 @@ namespace ComprasVista
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(155, 12);
+            this.navegador1.Location = new System.Drawing.Point(139, 12);
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(574, 152);
             this.navegador1.TabIndex = 39;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load_1);
             // 
             // Proveedores
             // 
